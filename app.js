@@ -237,7 +237,7 @@ function renderHomeView(container) {
     </section>
 
     <!-- PATHWAYS OVERVIEW SECTION -->
-    <section class="section" style="background-color: var(--color-surface); border-top: 1px solid var(--color-slate-200); border-bottom: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto;">
           <span class="badge-tag">Personalised Pathways</span>
@@ -315,7 +315,7 @@ function renderHomeView(container) {
     </section>
 
     <!-- SIGNATURE CAREER JOURNEY STEPPER -->
-    <section id="journey" class="section">
+    <section id="journey" class="section section-spider-dark">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
           <span class="badge-tag">End-to-End Progression</span>
@@ -375,7 +375,7 @@ function renderHomeView(container) {
     </section>
 
     <!-- VIDEO SPOTLIGHT SECTION (LEFT VIDEO + RIGHT TEXT - IMAGE 4 LAYOUT) -->
-    <section class="section" style="background: var(--color-ink-deep); color: #fff;">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
           <!-- LEFT SIDE VIDEO -->
@@ -401,7 +401,7 @@ function renderHomeView(container) {
     </section>
 
     <!-- PARTNER MARQUEE -->
-    <section class="section" style="background: var(--color-surface); border-top: 1px solid var(--color-slate-200); border-bottom: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-dark">
       <div class="container">
         <div style="text-align: center; margin-bottom: 2rem;">
           <span class="badge-tag">Industry Ecosystem</span>
@@ -414,7 +414,7 @@ function renderHomeView(container) {
     </section>
 
     <!-- ALUMNI PREVIEW -->
-    <section id="alumni" class="section">
+    <section id="alumni" class="section section-spider-light">
       <div class="container">
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
           <div>
@@ -428,7 +428,7 @@ function renderHomeView(container) {
     </section>
 
     <!-- OFFICE LOCATIONS TABS -->
-    <section class="section" style="background: var(--color-surface); border-top: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-dark">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
           <span class="badge-tag">National Footprint</span>
@@ -472,7 +472,7 @@ function renderCandidatesView(container) {
     </section>
 
     <!-- CANDIDATE PROGRAMS GRID -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
           <span class="badge-tag">Program Suite</span>
@@ -575,7 +575,7 @@ function renderCandidatesView(container) {
     </section>
 
     <!-- VIDEO SPOTLIGHT (LEFT TEXT + RIGHT VIDEO - IMAGE 3 LAYOUT) -->
-    <section class="section" style="background: var(--color-paper); border-top: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-dark">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
           <!-- LEFT SIDE TEXT -->
@@ -599,7 +599,7 @@ function renderCandidatesView(container) {
     </section>
 
     <!-- STEP-BY-STEP APPLICATION PATHWAY -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
           <span class="badge-tag">Application Workflow</span>
@@ -663,7 +663,7 @@ function renderEmployersView(container) {
     </section>
 
     <!-- EMPLOYER SERVICES BREAKDOWN -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
           <span class="badge-tag">Staffing Models</span>
@@ -738,7 +738,7 @@ function renderEmployersView(container) {
     </section>
 
     <!-- EMPLOYER VIDEO SECTION (LEFT VIDEO + RIGHT TEXT - IMAGE 4 LAYOUT) -->
-    <section class="section" style="background: var(--color-paper); border-top: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-dark">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
           <!-- LEFT SIDE VIDEO -->
@@ -759,7 +759,7 @@ function renderEmployersView(container) {
     </section>
 
     <!-- CLIENT LOGO TRACK -->
-    <section class="section" style="background: var(--color-surface); border-top: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; margin-bottom: 2rem;">
           <span class="badge-tag">Partner Employers</span>
@@ -796,7 +796,7 @@ function renderEducationProvidersView(container) {
     </section>
 
     <!-- WIL PARTNERSHIPS OVERVIEW -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
           <span class="badge-tag">WIL Framework</span>
@@ -833,7 +833,7 @@ function renderEducationProvidersView(container) {
     </section>
 
     <!-- VIDEO SPOTLIGHT (LEFT VIDEO + RIGHT TEXT - IMAGE 4 LAYOUT) -->
-    <section class="section" style="background: var(--color-paper); border-top: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-dark">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
           <!-- LEFT SIDE VIDEO -->
@@ -874,7 +874,7 @@ function renderResourcesView(container) {
     </section>
 
     <!-- ARTICLES GRID -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3rem;">
           <span class="badge-tag">Featured Publications</span>
@@ -948,7 +948,7 @@ function renderAboutView(container) {
     </section>
 
     <!-- COMPANY BACKGROUND & METRICS -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
           <div>
@@ -983,7 +983,7 @@ function renderAboutView(container) {
     </section>
 
     <!-- CORPORATE VIDEO PLAYER (LEFT VIDEO + RIGHT TEXT - IMAGE 3 LAYOUT) -->
-    <section class="section" style="background: var(--color-paper); border-top: 1px solid var(--color-slate-200);">
+    <section class="section section-spider-dark">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
           <!-- LEFT SIDE VIDEO -->
@@ -1024,7 +1024,7 @@ function renderContactView(container) {
     </section>
 
     <!-- CONTACT DETAILS & FORM (LEFT: FORM + HOTLINES, RIGHT: VIDEO - IMAGE 5 LAYOUT) -->
-    <section class="section">
+    <section class="section section-spider-light">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: start;">
           <!-- LEFT COLUMN: TOP FORM, BOTTOM HOTLINES -->

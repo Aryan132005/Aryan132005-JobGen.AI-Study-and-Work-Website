@@ -378,19 +378,140 @@ video {
   position: relative;
 }
 
+/* ==========================================================================
+   SPIDER-WEB / PLEXUS NETWORK SECTION BACKGROUNDS (ALTERNATING WHITE & BLACK)
+   ========================================================================== */
+
+/* 1. WHITE / LIGHT SPIDER SECTION */
+.section-spider-light,
+.section-light {
+  background-color: #FFFFFF !important;
+  background-image: url('spider_bg_light.svg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  color: var(--color-ink) !important;
+  position: relative;
+  border-top: 1px solid var(--color-slate-200);
+  border-bottom: 1px solid var(--color-slate-200);
+}
+
+.section-spider-light .heading-1,
+.section-spider-light .heading-2,
+.section-spider-light .heading-3,
+.section-spider-light h1,
+.section-spider-light h2,
+.section-spider-light h3,
+.section-spider-light h4 {
+  color: var(--color-ink) !important;
+}
+
+.section-spider-light .lead-text,
+.section-spider-light p {
+  color: var(--color-slate-600) !important;
+}
+
+/* 2. BLACK / DARK SPIDER SECTION */
+.section-spider-dark,
 .section-dark {
-  background-color: var(--color-ink-deep);
-  color: var(--color-surface);
+  background-color: #070D18 !important;
+  background-image: url('spider_bg_dark.svg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  color: #FFFFFF !important;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.section-dark .heading-1,
-.section-dark .heading-2,
-.section-dark .heading-3 {
-  color: var(--color-surface);
+.section-spider-dark .heading-1,
+.section-spider-dark .heading-2,
+.section-spider-dark .heading-3,
+.section-spider-dark h1,
+.section-spider-dark h2,
+.section-spider-dark h3,
+.section-spider-dark h4,
+.section-spider-dark .journey-node-title,
+.section-spider-dark .stat-giant-num,
+.section-spider-dark .stat-sub-num {
+  color: #FFFFFF !important;
 }
 
-.section-dark .lead-text {
-  color: var(--color-slate-400);
+.section-spider-dark .lead-text,
+.section-spider-dark p,
+.section-spider-dark .stat-label-text,
+.section-spider-dark .journey-node-desc,
+.section-spider-dark .path-desc {
+  color: rgba(226, 232, 240, 0.88) !important;
+}
+
+.section-spider-dark .journey-group-title {
+  color: #38BDF8 !important;
+}
+
+.section-spider-dark .path-card-candidate,
+.section-spider-dark .path-card-employer,
+.section-spider-dark .employer-primary-card {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #FFFFFF !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+.section-spider-dark .path-card-candidate:hover,
+.section-spider-dark .path-card-employer:hover,
+.section-spider-dark .employer-primary-card:hover {
+  background: rgba(30, 41, 59, 0.95) !important;
+  border-color: rgba(245, 158, 11, 0.6) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(245, 158, 11, 0.18) !important;
+}
+
+.section-spider-dark .journey-node-card {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #FFFFFF !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+.section-spider-dark .journey-node-card:hover,
+.section-spider-dark .journey-node-card.active {
+  background: rgba(30, 41, 59, 0.95) !important;
+  border-color: rgba(245, 158, 11, 0.6) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(245, 158, 11, 0.2) !important;
+}
+
+.section-spider-dark .journey-node-circle {
+  background: rgba(30, 41, 59, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: #FFFFFF !important;
+}
+
+.section-spider-dark .journey-node-card.active .journey-node-circle {
+  background: var(--color-accent-blue) !important;
+  border-color: var(--color-accent-blue) !important;
+  color: #FFFFFF !important;
+}
+
+.section-spider-dark .city-chip-btn {
+  background: rgba(15, 23, 42, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #E2E8F0 !important;
+}
+
+.section-spider-dark .city-chip-btn.active {
+  background: var(--color-accent-blue) !important;
+  border-color: var(--color-accent-blue) !important;
+  color: #FFFFFF !important;
+}
+
+.section-spider-dark .stats-dominant-wrapper .stat-box-dominant,
+.section-spider-dark .stats-dominant-wrapper .stat-box-secondary {
+  background: rgba(15, 23, 42, 0.82) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(14px) !important;
 }
 
 /* 2. CINEMATIC BRAND HERO SECTION WITH BACKGROUND VIDEO */
