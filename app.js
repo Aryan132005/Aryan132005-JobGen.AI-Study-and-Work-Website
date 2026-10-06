@@ -207,7 +207,7 @@ function renderHomeView(container) {
 
             <!-- 3 STAT BADGES PLACED DIRECTLY UNDER THE 2 CTA BUTTONS -->
             <div class="hero-stats-under-cta">
-              <div class="hero-badge-float badge-candidates">
+              <div class="hero-stat-card">
                 <div class="stat-icon">&#127891;</div>
                 <div>
                   <div class="stat-number">8,000+</div>
@@ -215,7 +215,7 @@ function renderHomeView(container) {
                 </div>
               </div>
 
-              <div class="hero-badge-float badge-businesses">
+              <div class="hero-stat-card">
                 <div class="stat-icon">&#127970;</div>
                 <div>
                   <div class="stat-number">3,000+</div>
@@ -223,7 +223,7 @@ function renderHomeView(container) {
                 </div>
               </div>
 
-              <div class="hero-badge-float badge-since">
+              <div class="hero-stat-card">
                 <div class="stat-icon">&#128197;</div>
                 <div>
                   <div class="stat-number">2007</div>
