@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initLogoMarquee();
   initModalHandlers();
   initRouter();
+  if (window.initSpiderCanvases) {
+    window.initSpiderCanvases();
+  }
 });
 
 /* --------------------------------------------------------------------------
@@ -108,7 +111,7 @@ function updateActiveNavLinks(routePath) {
     if (!route) return;
     const normRoute = route.replace(/\.html$/, '').replace(/\/$/, '') || '/';
     const normCurrent = routePath.replace(/\.html$/, '').replace(/\/$/, '') || '/';
-    
+
     if (normRoute === normCurrent || (normRoute !== '/' && normCurrent.startsWith(normRoute))) {
       link.classList.add('active');
     } else {
@@ -168,6 +171,9 @@ function renderCurrentRoute() {
   initAlumniSearch();
   initCityTabs();
   initJourneyProgressStepper();
+  if (window.initSpiderCanvases) {
+    window.initSpiderCanvases();
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1464,7 +1470,7 @@ function initAlumniSearch() {
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       const query = e.target.value.toLowerCase().trim();
-      const filtered = ALUMNI_DATA.filter(item => 
+      const filtered = ALUMNI_DATA.filter(item =>
         item.name.toLowerCase().includes(query) ||
         item.degree.toLowerCase().includes(query) ||
         item.uni.toLowerCase().includes(query) ||
@@ -1629,9 +1635,9 @@ function initModalHandlers() {
 
   if (!overlay || !modalBody) return;
 
-  window.openModal = function(type) {
+  window.openModal = function (type) {
     overlay.classList.add('active');
-    
+
     if (type === 'hire') {
       modalBody.innerHTML = `
         <span class="badge-tag" style="margin-bottom: 0.75rem;">Employer Staffing Request</span>
@@ -1706,7 +1712,7 @@ function initModalHandlers() {
     }
   };
 
-  window.closeModal = function() {
+  window.closeModal = function () {
     overlay.classList.remove('active');
   };
 
