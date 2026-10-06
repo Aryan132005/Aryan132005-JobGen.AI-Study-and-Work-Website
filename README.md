@@ -81,8 +81,8 @@
 ### Quick Start
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Aryan132005/Aryan132005-JobGen.AI-Study-and-Work-Website.git
-   cd Aryan132005-JobGen.AI-Study-and-Work-Website
+   git clone https://github.com/Aryan132005/JobGen.AI-Study-and-Work-Website.git
+   cd JobGen.AI-Study-and-Work-Website
    ```
 
 2. **Launch the Range-Supported Development Server:**
@@ -101,7 +101,7 @@
 
 - **Developer:** Aryan Saini
 - **GitHub:** [@Aryan132005](https://github.com/Aryan132005)
-- **Email:** [aaryansaini132005@gmail.com](mailto:aaryansaini132005@gmail.com)
+- **Email:** [aryansaini132005@gmail.com](mailto:aryansaini132005@gmail.com)
 
 ---
 
