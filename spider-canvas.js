@@ -20,15 +20,13 @@
       this.canvas.className = 'spider-canvas';
       this.ctx = this.canvas.getContext('2d');
 
-      // Theme colors: Non-colorful, classy, matching reference screenshot
+      // Theme configuration:
+      // Dark sections: Soft Luminous Stardust (calm, non-distracting, celestial micro-dust)
+      // Light sections: Clean corporate blue spider network
       if (this.isDark) {
-        // Dark section (matches Daylo Build reference): champagne gold & soft silver
-        this.lineRgb = '212, 175, 55'; // #d4af37 champagne gold
-        this.dotColor = '#c5a059';      // gold node
-        this.ringColor = '#c5a059';
-        this.mouseLineRgb = '225, 185, 85';
+        this.theme = 'stardust';
       } else {
-        // Light section: subtle clean corporate deep blue
+        this.theme = 'spider';
         this.lineRgb = '2, 132, 199';   // #0284c7 blue
         this.dotColor = '#0284c7';
         this.ringColor = '#0284c7';
@@ -63,19 +61,37 @@
     }
 
     createParticles() {
-      // Scale particle count based on section area (typically 40 to 65 nodes)
-      const count = Math.max(35, Math.min(65, Math.floor((this.width * this.height) / 22000)));
       this.particles = [];
 
-      for (let i = 0; i < count; i++) {
-        this.particles.push({
-          x: Math.random() * this.width,
-          y: Math.random() * this.height,
-          vx: (Math.random() - 0.5) * 0.65,
-          vy: (Math.random() - 0.5) * 0.65,
-          radius: i % 7 === 0 ? 2.8 : (i % 3 === 0 ? 2.0 : 1.4),
-          hasRing: i % 11 === 0 // Highlighted node with outer halo ring
-        });
+      if (this.theme === 'stardust') {
+        // Soft Luminous Stardust: tiny, soft, floating micro-particles (no harsh lines, no rings)
+        const count = Math.max(50, Math.min(90, Math.floor((this.width * this.height) / 16000)));
+        for (let i = 0; i < count; i++) {
+          this.particles.push({
+            x: Math.random() * this.width,
+            y: Math.random() * this.height,
+            radius: Math.random() * 0.9 + 0.6, // 0.6px - 1.5px micro dots
+            baseAlpha: Math.random() * 0.22 + 0.12, // soft 0.12 - 0.34 opacity
+            twinkleSpeed: Math.random() * 0.022 + 0.008,
+            twinklePhase: Math.random() * Math.PI * 2,
+            vx: (Math.random() - 0.5) * 0.16,
+            vy: -(Math.random() * 0.26 + 0.1), // gentle upward floating
+            color: i % 3 === 0 ? '224, 242, 254' : (i % 2 === 0 ? '186, 230, 253' : '241, 245, 249')
+          });
+        }
+      } else {
+        // Light section: subtle clean corporate deep blue spider web network
+        const count = Math.max(35, Math.min(65, Math.floor((this.width * this.height) / 22000)));
+        for (let i = 0; i < count; i++) {
+          this.particles.push({
+            x: Math.random() * this.width,
+            y: Math.random() * this.height,
+            vx: (Math.random() - 0.5) * 0.65,
+            vy: (Math.random() - 0.5) * 0.65,
+            radius: i % 7 === 0 ? 2.8 : (i % 3 === 0 ? 2.0 : 1.4),
+            hasRing: i % 11 === 0
+          });
+        }
       }
     }
 
@@ -122,80 +138,130 @@
     updateAndDraw() {
       if (!this.isVisible) return;
 
-      const { ctx, width, height, mouse, particles, isDark } = this;
+      const { ctx, width, height, mouse, particles, theme } = this;
       ctx.clearRect(0, 0, width, height);
 
-      const maxConnDist = 120;
+      if (theme === 'stardust') {
+        // --- 1. DARK SECTION: SOFT LUMINOUS STARDUST ---
 
-      // 1. Draw web lines between neighboring particles
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-
-          if (dist < maxConnDist) {
-            const alpha = (1 - dist / maxConnDist) * (isDark ? 0.22 : 0.16);
-            ctx.strokeStyle = `rgba(${this.lineRgb}, ${alpha})`;
-            ctx.lineWidth = 0.85;
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-
-      // 2. Update particle positions and apply Mouse Attraction ("Pointer Kheenchega")
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i];
-
-        // Standard gentle drift
-        p.x += p.vx;
-        p.y += p.vy;
-
-        // Bounce gently at canvas boundaries
-        if (p.x < 5) { p.x = 5; p.vx *= -1; }
-        if (p.x > width - 5) { p.x = width - 5; p.vx *= -1; }
-        if (p.y < 5) { p.y = 5; p.vy *= -1; }
-        if (p.y > height - 5) { p.y = height - 5; p.vy *= -1; }
-
-        // Interactive mouse attraction
+        // Ambient spotlight glow following cursor
         if (mouse.x !== null && mouse.y !== null) {
-          const mdx = mouse.x - p.x;
-          const mdy = mouse.y - p.y;
-          const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+          const glowGrad = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 170);
+          glowGrad.addColorStop(0, 'rgba(56, 189, 248, 0.07)');
+          glowGrad.addColorStop(0.5, 'rgba(14, 165, 233, 0.02)');
+          glowGrad.addColorStop(1, 'rgba(15, 23, 42, 0)');
+          ctx.fillStyle = glowGrad;
+          ctx.beginPath();
+          ctx.arc(mouse.x, mouse.y, 170, 0, Math.PI * 2);
+          ctx.fill();
+        }
 
-          if (mdist < mouse.radius && mdist > 2) {
-            // Draw spider web line directly to cursor
-            const mAlpha = (1 - mdist / mouse.radius) * (isDark ? 0.6 : 0.45);
-            ctx.strokeStyle = `rgba(${this.mouseLineRgb}, ${mAlpha})`;
-            ctx.lineWidth = 1.15;
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(mouse.x, mouse.y);
-            ctx.stroke();
+        // Render soft drifting micro-particles
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
 
-            // Magnetic Attraction force: pull node towards mouse
-            const force = (mouse.radius - mdist) / mouse.radius;
-            p.x += (mdx / mdist) * force * 1.6;
-            p.y += (mdy / mdist) * force * 1.6;
+          // Slow organic floating drift
+          p.x += p.vx;
+          p.y += p.vy;
+          p.twinklePhase += p.twinkleSpeed;
+
+          // Seamless loop when particle floats off-screen
+          if (p.y < -6) {
+            p.y = height + 6;
+            p.x = Math.random() * width;
+          }
+          if (p.x < -6) p.x = width + 6;
+          if (p.x > width + 6) p.x = -6;
+
+          // Gentle mouse gravity attraction (subtle, no lines)
+          let alphaBoost = 0;
+          if (mouse.x !== null && mouse.y !== null) {
+            const mdx = mouse.x - p.x;
+            const mdy = mouse.y - p.y;
+            const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+            if (mdist < 140 && mdist > 2) {
+              const force = (140 - mdist) / 140;
+              p.x += (mdx / mdist) * force * 0.4;
+              p.y += (mdy / mdist) * force * 0.4;
+              alphaBoost = force * 0.25;
+            }
+          }
+
+          // Subtle twinkle calculation
+          const alpha = Math.min(0.65, Math.max(0.06, p.baseAlpha + Math.sin(p.twinklePhase) * 0.08 + alphaBoost));
+
+          ctx.fillStyle = `rgba(${p.color}, ${alpha})`;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      } else {
+        // --- 2. LIGHT SECTION: CLEAN CORPORATE BLUE SPIDER NETWORK ---
+        const maxConnDist = 120;
+
+        // Draw web lines between neighboring particles
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < maxConnDist) {
+              const alpha = (1 - dist / maxConnDist) * 0.16;
+              ctx.strokeStyle = `rgba(${this.lineRgb}, ${alpha})`;
+              ctx.lineWidth = 0.85;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
           }
         }
 
-        // 3. Draw particle node
-        ctx.fillStyle = this.dotColor;
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fill();
+        // Update particle positions and apply Mouse Attraction
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
 
-        // 4. Draw outer halo ring if designated
-        if (p.hasRing) {
-          ctx.strokeStyle = this.ringColor;
-          ctx.lineWidth = 1.1;
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 5) { p.x = 5; p.vx *= -1; }
+          if (p.x > width - 5) { p.x = width - 5; p.vx *= -1; }
+          if (p.y < 5) { p.y = 5; p.vy *= -1; }
+          if (p.y > height - 5) { p.y = height - 5; p.vy *= -1; }
+
+          if (mouse.x !== null && mouse.y !== null) {
+            const mdx = mouse.x - p.x;
+            const mdy = mouse.y - p.y;
+            const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+
+            if (mdist < mouse.radius && mdist > 2) {
+              const mAlpha = (1 - mdist / mouse.radius) * 0.45;
+              ctx.strokeStyle = `rgba(${this.mouseLineRgb}, ${mAlpha})`;
+              ctx.lineWidth = 1.15;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.stroke();
+
+              const force = (mouse.radius - mdist) / mouse.radius;
+              p.x += (mdx / mdist) * force * 1.6;
+              p.y += (mdy / mdist) * force * 1.6;
+            }
+          }
+
+          ctx.fillStyle = this.dotColor;
           ctx.beginPath();
-          ctx.arc(p.x, p.y, p.radius + 5.5, 0, Math.PI * 2);
-          ctx.stroke();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fill();
+
+          if (p.hasRing) {
+            ctx.strokeStyle = this.ringColor;
+            ctx.lineWidth = 1.1;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius + 5.5, 0, Math.PI * 2);
+            ctx.stroke();
+          }
         }
       }
 
