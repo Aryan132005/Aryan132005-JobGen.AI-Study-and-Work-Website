@@ -934,7 +934,7 @@ function renderAboutView(container) {
   container.innerHTML = `
     <!-- ABOUT HERO WITH RICH BACKGROUND PHOTOGRAPHY -->
     <section class="hero-section" style="position: relative; overflow: hidden; background: #0f172a; color: #fff;">
-      <img src="candidates_hero_bg.jpg" class="hero-bg-img" alt="Study & Work Corporate Profile">
+      <img src="about_hero_bg.jpg" class="hero-bg-img" alt="Study & Work Corporate Profile">
       <div class="hero-gradient-overlay"></div>
       <div class="container hero-container" style="position: relative; z-index: 4;">
         <div style="max-width: 800px;">
@@ -1010,7 +1010,7 @@ function renderContactView(container) {
   container.innerHTML = `
     <!-- CONTACT HERO WITH RICH BACKGROUND PHOTOGRAPHY -->
     <section class="hero-section" style="position: relative; overflow: hidden; background: #0f172a; color: #fff;">
-      <img src="employers_hero_bg.jpg" class="hero-bg-img" alt="Study & Work Contact Desk">
+      <img src="contact_hero_bg.jpg" class="hero-bg-img" alt="Study & Work Contact Desk">
       <div class="hero-gradient-overlay"></div>
       <div class="container hero-container" style="position: relative; z-index: 4;">
         <div style="max-width: 800px;">
