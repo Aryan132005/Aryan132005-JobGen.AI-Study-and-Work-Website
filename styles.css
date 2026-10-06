@@ -427,6 +427,7 @@ video {
 }
 
 /* LIGHT SPIDER SECTION CARDS, BOXES, AND TILES - ELEGANT SOFT TINT */
+/* LIGHT SPIDER SECTION CARDS & BOXES — THEME-RELATED SOFT PASTEL PALETTES */
 .section-spider-light .path-card-candidate,
 .section-spider-light .path-card-employer,
 .section-spider-light .alumni-card-editorial,
@@ -437,10 +438,7 @@ video {
 .section-spider-light [style*="background:var(--color-surface)"],
 .section-spider-light [style*="background: var(--color-paper)"],
 .section-spider-light [style*="background:var(--color-paper)"] {
-  background: linear-gradient(165deg, #F8FAFD 0%, #EEF4F9 100%) !important;
-  border: 1px solid #D5E2EE !important;
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
   transition: all var(--transition-normal);
 }
 
@@ -448,21 +446,91 @@ video {
   background: #000 !important;
 }
 
-.section-spider-light .path-card-candidate:hover,
-.section-spider-light .path-card-employer:hover,
-.section-spider-light .alumni-card-editorial:hover,
-.section-spider-light .candidate-grid-3 > div:hover,
-.section-spider-light .employer-grid-2 > div:hover,
-.section-spider-light [style*="background: var(--color-surface)"]:hover,
-.section-spider-light [style*="background:var(--color-surface)"]:hover,
-.section-spider-light [style*="background: var(--color-paper)"]:hover,
-.section-spider-light [style*="background:var(--color-paper)"]:hover {
+/* 1. SOFT AZURE BLUE TINT (Internships / Tech / Option 1) */
+.tint-azure,
+.section-spider-light .candidate-grid-3 > div:nth-child(3n+1),
+.candidate-grid-3 > div:nth-child(3n+1),
+.section-spider-light .employer-grid-2 > div:nth-child(2n+1),
+.employer-grid-2 > div:nth-child(2n+1),
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+1) {
+  background: linear-gradient(165deg, #F0F7FF 0%, #E3F0FC 100%) !important;
+  border: 1px solid #BFDCF7 !important;
+  box-shadow: 0 4px 18px -2px rgba(2, 132, 199, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+.tint-azure:hover,
+.section-spider-light .candidate-grid-3 > div:nth-child(3n+1):hover,
+.candidate-grid-3 > div:nth-child(3n+1):hover,
+.section-spider-light .employer-grid-2 > div:nth-child(2n+1):hover,
+.employer-grid-2 > div:nth-child(2n+1):hover,
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+1):hover {
   transform: translateY(-5px);
   background: #FFFFFF !important;
   border-color: #0284C7 !important;
-  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.16), 0 6px 14px -2px rgba(15, 23, 42, 0.06) !important;
+  box-shadow: 0 18px 36px -4px rgba(2, 132, 199, 0.22), 0 6px 14px -2px rgba(15, 23, 42, 0.06) !important;
 }
 
+/* 2. SOFT MINT EMERALD TINT (Job Placement / Graduate / Finance / Option 2) */
+.tint-emerald,
+.section-spider-light .candidate-grid-3 > div:nth-child(3n+2),
+.candidate-grid-3 > div:nth-child(3n+2),
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+2) {
+  background: linear-gradient(165deg, #F0FDF8 0%, #E3F8EF 100%) !important;
+  border: 1px solid #BAECD7 !important;
+  box-shadow: 0 4px 18px -2px rgba(5, 150, 105, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+.tint-emerald:hover,
+.section-spider-light .candidate-grid-3 > div:nth-child(3n+2):hover,
+.candidate-grid-3 > div:nth-child(3n+2):hover,
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+2):hover {
+  transform: translateY(-5px);
+  background: #FFFFFF !important;
+  border-color: #059669 !important;
+  box-shadow: 0 18px 36px -4px rgba(5, 150, 105, 0.22), 0 6px 14px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* 3. SOFT WARM HONEY AMBER TINT (Casual Jobs / Student Support / Option 3) */
+.tint-amber,
+.section-spider-light .candidate-grid-3 > div:nth-child(3n+3),
+.candidate-grid-3 > div:nth-child(3n+3),
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+3) {
+  background: linear-gradient(165deg, #FFFDF5 0%, #FEF5E3 100%) !important;
+  border: 1px solid #F8E2B2 !important;
+  box-shadow: 0 4px 18px -2px rgba(217, 119, 6, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+.tint-amber:hover,
+.section-spider-light .candidate-grid-3 > div:nth-child(3n+3):hover,
+.candidate-grid-3 > div:nth-child(3n+3):hover,
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+3):hover {
+  transform: translateY(-5px);
+  background: #FFFFFF !important;
+  border-color: #D97706 !important;
+  box-shadow: 0 18px 36px -4px rgba(217, 119, 6, 0.22), 0 6px 14px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* 4. SOFT LAVENDER VIOLET TINT (Staffing / Permanent Direct Recruitment / Option 4) */
+.tint-violet,
+.section-spider-light .employer-grid-2 > div:nth-child(2n+2),
+.employer-grid-2 > div:nth-child(2n+2),
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+4) {
+  background: linear-gradient(165deg, #FAF7FF 0%, #F0EAFD 100%) !important;
+  border: 1px solid #DDD3F7 !important;
+  box-shadow: 0 4px 18px -2px rgba(124, 58, 237, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+.tint-violet:hover,
+.section-spider-light .employer-grid-2 > div:nth-child(2n+2):hover,
+.employer-grid-2 > div:nth-child(2n+2):hover,
+.section-spider-light div[style*="grid-template-columns"] > div:nth-child(4n+4):hover {
+  transform: translateY(-5px);
+  background: #FFFFFF !important;
+  border-color: #7C3AED !important;
+  box-shadow: 0 18px 36px -4px rgba(124, 58, 237, 0.22), 0 6px 14px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Typography inside light section cards */
 .section-spider-light .path-card-candidate h3,
 .section-spider-light .path-card-employer h3,
 .section-spider-light .candidate-grid-3 h3,

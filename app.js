@@ -275,7 +275,7 @@ function renderHomeView(container) {
             </div>
 
             <div class="candidate-grid-3">
-              <div class="path-card-candidate">
+              <div class="path-card-candidate tint-azure">
                 <span class="badge-tag" style="width: fit-content;">01 Internship</span>
                 <div>
                   <h3 class="heading-3">Professional Internship</h3>
@@ -284,7 +284,7 @@ function renderHomeView(container) {
                 <a href="/internship" data-link class="path-link">Explore Internship &rarr;</a>
               </div>
 
-              <div class="path-card-candidate">
+              <div class="path-card-candidate tint-emerald">
                 <span class="badge-tag" style="width: fit-content; background: rgba(5, 150, 105, 0.08); color: var(--color-accent-emerald); border-color: rgba(5, 150, 105, 0.2);">02 Job Placement</span>
                 <div>
                   <h3 class="heading-3">Graduate Jobs</h3>
@@ -293,7 +293,7 @@ function renderHomeView(container) {
                 <a href="/job-placement" data-link class="path-link" style="color: var(--color-accent-emerald);">Graduate Opportunities &rarr;</a>
               </div>
 
-              <div class="path-card-candidate">
+              <div class="path-card-candidate tint-amber">
                 <span class="badge-tag" style="width: fit-content; background: rgba(217, 119, 6, 0.08); color: var(--color-accent-amber); border-color: rgba(217, 119, 6, 0.2);">03 Casual Jobs</span>
                 <div>
                   <h3 class="heading-3">Casual Student Jobs</h3>
@@ -312,7 +312,7 @@ function renderHomeView(container) {
             </div>
 
             <div class="employer-grid-2">
-              <div class="path-card-employer">
+              <div class="path-card-employer tint-azure">
                 <span class="badge-tag" style="width: fit-content; background: rgba(2, 132, 199, 0.1); color: var(--color-accent-blue);">Try Before You Hire</span>
                 <div>
                   <h3 class="heading-3" style="color: var(--color-ink);">Host an Intern (12 Weeks Zero Cost)</h3>
@@ -321,13 +321,13 @@ function renderHomeView(container) {
                 <a href="/employers" data-link class="path-link" style="color: var(--color-accent-blue);">Host an Intern &rarr;</a>
               </div>
 
-              <div class="path-card-employer">
-                <span class="badge-tag" style="width: fit-content; background: rgba(15, 23, 42, 0.08); color: var(--color-ink);">Direct Recruitment</span>
+              <div class="path-card-employer tint-violet">
+                <span class="badge-tag" style="width: fit-content; background: rgba(124, 58, 237, 0.1); color: #7C3AED;">Direct Recruitment</span>
                 <div>
                   <h3 class="heading-3" style="color: var(--color-ink);">Permanent & Casual Staffing</h3>
                   <p class="path-desc" style="margin-top: 0.5rem;">5%-10% permanent placement fee with 6-month replacement guarantee, or flexible 65% markup casual staffing.</p>
                 </div>
-                <a href="/staffing" data-link class="path-link" style="color: var(--color-ink);">Explore Staffing &rarr;</a>
+                <a href="/staffing" data-link class="path-link" style="color: #7C3AED;">Explore Staffing &rarr;</a>
               </div>
             </div>
           </div>
@@ -630,26 +630,26 @@ function renderCandidatesView(container) {
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
-          <div style="background: var(--color-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-slate-200);">
+          <div class="tint-azure" style="padding: 1.5rem; border-radius: var(--radius-md);">
             <div style="font-weight: 800; font-size: 1.5rem; color: var(--color-accent-blue);">01</div>
             <h4 style="font-size: 1.1rem; font-weight: 700; margin: 0.5rem 0;">Register Profile</h4>
             <p style="font-size: 0.9rem; color: var(--color-slate-600);">Submit your resume, academic transcripts, and target placement sector.</p>
           </div>
 
-          <div style="background: var(--color-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-slate-200);">
-            <div style="font-weight: 800; font-size: 1.5rem; color: var(--color-accent-blue);">02</div>
+          <div class="tint-emerald" style="padding: 1.5rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 800; font-size: 1.5rem; color: var(--color-accent-emerald);">02</div>
             <h4 style="font-size: 1.1rem; font-weight: 700; margin: 0.5rem 0;">Skills Assessment</h4>
             <p style="font-size: 0.9rem; color: var(--color-slate-600);">Undergo career consultation and Australian workplace cultural readiness coaching.</p>
           </div>
 
-          <div style="background: var(--color-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-slate-200);">
-            <div style="font-weight: 800; font-size: 1.5rem; color: var(--color-accent-blue);">03</div>
+          <div class="tint-amber" style="padding: 1.5rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 800; font-size: 1.5rem; color: var(--color-accent-amber);">03</div>
             <h4 style="font-size: 1.1rem; font-weight: 700; margin: 0.5rem 0;">Host Matching</h4>
             <p style="font-size: 0.9rem; color: var(--color-slate-600);">Interview with vetted host companies matching your technical qualifications.</p>
           </div>
 
-          <div style="background: var(--color-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-slate-200);">
-            <div style="font-weight: 800; font-size: 1.5rem; color: var(--color-accent-blue);">04</div>
+          <div class="tint-violet" style="padding: 1.5rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 800; font-size: 1.5rem; color: #7C3AED;">04</div>
             <h4 style="font-size: 1.1rem; font-weight: 700; margin: 0.5rem 0;">Workplace Placement</h4>
             <p style="font-size: 0.9rem; color: var(--color-slate-600);">Complete your 12-week structured internship or direct graduate placement.</p>
           </div>
