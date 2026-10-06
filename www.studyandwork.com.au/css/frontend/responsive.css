@@ -1,0 +1,1195 @@
+@media screen and (min-width: 200px) and (max-width:650px) {
+
+ .navigation {
+float:left !important;
+}
+
+.ec-main-pages p {
+	padding:5px 0 0 0;
+	font-size:13px;
+	font-family: 'montserratregular', sans-serif;
+	font-weight:100;
+	line-height:26px;
+
+}
+
+header .bottom-header .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    color: #666764;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    padding: 0px 0x 15px 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+header .navbar-default .navbar-toggle {
+    border-color: transparent;
+    background-color: #5A5555;
+    margin-top: 10px;
+margin-bottom: 15px;
+}
+
+.exprience-content-main p {
+    font-size: 14px;
+    text-align: left;
+    color: #fff;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+}
+
+
+/* Define mobile styles Small screens */
+@media (max-width: 480px) {
+ header .navbar-default .navbar-toggle {
+ border-color: transparent;
+ background-color: #5A5555 !important;
+ margin-top: 5px;
+ float:left !important;
+}
+ .navigation {
+float:left !important;
+}
+.navbar-collapse.in {
+ overflow-y:100% !important;
+}
+
+.navbar-nav{ margin:0 !important}
+
+.navigation {
+    margin: 0;
+    padding: 12px 0 0 0;
+    float: left !important;
+}
+
+
+.ec-team, .ec-team-grid figure, .ec-team figure a, .ec-team figure a img {
+	float: none !important;
+	width: 100%;
+}
+
+.ec-main-title {
+    float: none;
+    width: 100%;
+    margin: 15px 0px 8px 0px !important;
+}
+
+
+.our_services {
+    margin: 0;
+    padding: 30px 0 10px 0 !important;
+}
+.our_services h1{
+	font-size:18px !important; 
+	margin-bottom:0 !important; 
+	padding-bottom:0 !important;
+	}
+
+
+
+
+/*************************************************************
+.............. 3.6. FEATURED JOBSEEKER EMPLOYERS ...............
+*************************************************************/
+
+.featured_section {
+ margin:0;
+ width: 100%;
+ background: none !important;
+}
+ .featured_section .left {
+ float: none !important;
+ width: 100% !important;
+ margin-left:0;
+ padding-right:0px !important;
+ background:#74A741!important;
+ padding-top:20px !important;
+ padding-bottom:20px !important;
+ min-height:50px !important;
+}
+ .featured_section .left h1 {
+ float: none !important;
+ padding-right:0px !important;
+ font-size:20px !important;
+ text-transform:uppercase;
+ color:#FFF;
+ margin:0px;
+ font-family: 'Montserrat', sans-serif;
+ text-align:center !important;
+ line-height:20px;
+}
+ .featured_section .left .text {
+ float: none !important;
+ color:#FFF;
+ font-size:13px;
+ clear:both;
+ text-align: center !important;
+ line-height:18px !important;
+ padding-top:3px !important;
+}
+ .featured_section .left .create_account {
+ float:none;
+ color:#FFF;
+ font-size:14px !important;
+ clear:both;
+ margin-right:0 !important;
+ margin-top:10px !important;
+ text-align:center;
+}
+ .featured_section .left .create_account a {
+ background:#00ADEF;
+ color:#FFF;
+ min-width:100% !important;
+ text-align:center !important;
+ line-height:45px;
+ font-size:14px !important;
+ font-family: 'Montserrat', sans-serif;
+ text-transform:uppercase;
+ border-radius:30px;
+ padding:10px 20px !important;
+}
+ .featured_section .left .create_account:hover {
+ float: none !important;
+ color:#FFF;
+ font-size:14px !important;
+ clear:both;
+}
+ .featured_section .right {
+ float:none !important;
+ margin-left:0 !important;
+ width:100% !important;
+ background:#00ADEF!important;
+ padding-top:20px !important;
+ padding-bottom:20px !important;
+ min-height:50px !important;
+ text-align:center !important;
+}
+ .featured_section .right h1 {
+ float: none !important;
+ padding-right:0px !important;
+ padding-left:0 !important;
+ font-size:20px !important;
+ text-transform:uppercase;
+ color:#FFF;
+ margin:0px;
+ font-family: 'Montserrat', sans-serif;
+ text-align:center !important;
+ line-height:20px;
+}
+ .featured_section .right .text {
+ padding-left:0 !important;
+ float: none !important;
+ color:#FFF;
+ font-size:13px;
+ clear:both;
+ text-align: center !important;
+ line-height:18px !important;
+ padding-top:3px !important;
+}
+ .featured_section .right .start_hiring {
+ float: none !important;
+ color:#FFF;
+ font-size:14px !important;
+ clear:both;
+ margin-left:0px !important;
+ margin-top:10px !important;
+ text-align:center !important;
+}
+ .featured_section .right .start_hiring a {
+ background:#74A741;
+ min-width:100% !important;
+ text-align:center;
+ line-height:45px;
+ font-size:14px;
+ font-family: 'Montserrat', sans-serif;
+ text-transform:uppercase;
+ border-radius:30px;
+ padding:10px 20px;
+ color:#FFF;
+}
+ .featured_section .right .start_hiring:hover {
+ float: left;
+ color:#FFF;
+ font-size:14px;
+ clear:both;
+}
+
+
+/*************************************************************
+.............. CAREER MANAGEMENT AND RECRUITMENTAGENCY ...............
+*************************************************************/
+
+.career-management-bg {
+ margin:30px 0 0px 0;
+padding:0;
+background: url(../../images/1.jpg) no-repeat top center !important;
+width:100%;
+}
+.career-management .title {
+margin:0;
+padding:20px 0 0 0 !important;
+text-align:center;
+font-family: 'Montserrat', sans-serif;
+font-size:18px !important;
+color:#FFF;
+text-transform:uppercase;
+}
+.career-management .text {
+margin:0;
+padding:10px 0px 10px 0px !important;
+font-size:12px !important;
+font-weight:400;
+line-height:16px !important;
+color:#FFF;
+text-align:center;
+font-family: 'Open Sans', sans-serif !important;
+}
+.career-management .slogan {
+margin:0;
+padding:0px 0 50px 0;
+font-size:15px !important;
+font-weight:bold;
+line-height:20px !important;
+color:#ffef67;
+text-align:center;
+font-style:italic;
+font-family: 'Open Sans', sans-serif !important;
+}
+
+
+
+/*************************************************************
+.............. NEWSLETTER  PORTION ...............
+*************************************************************/
+
+.newsletter {
+	margin:0;
+	padding:20px 0 30px 0 !important;
+	background:#f5f5f5;
+}
+
+.newsletter h3{
+	margin:0;
+	padding:0 0 10px 0;
+	font-size:20px !important;
+   font-family: 'Montserrat', sans-serif;
+   color:#666764;
+   text-align:center;
+   text-transform:uppercase;
+   line-height:20px;
+}
+
+.text-info{
+	font-family: 'Open Sans', sans-serif !important;
+   color:#666764;
+   text-align:center !important;
+   font-size:13px !important;
+   padding:0 !important;
+   line-height:18px;
+   }
+
+
+.newsletter .input-group-btn > .btn{
+	background:#376bb2 !important;
+	color:#FFF;
+	 font-family: 'Montserrat', sans-serif;
+	 font-size:13px !important;
+	 line-height:35px;
+	 border-radius:0px 5px 5px 0px;
+	 font-weight:100;
+	 
+	}
+	
+	.newsletter input[type="email"] {
+    color:#c9c9c9;
+    display: inline-block;
+    font-size: 12px !important;
+    font-weight: 400;
+    height:50px;
+    line-height: 20px;
+    outline: none;
+    padding: 4px 10px;
+    vertical-align: middle;
+    border: 1px solid #c9c9c9 !important;
+	background:#FFF !important ;
+	border-radius:5px;
+	
+}
+
+/*************************************************************
+.............. BOTTOM ABOUT PORTION ...............
+*************************************************************/
+
+
+.ec-bottom-section {
+	float: none !important;
+	width: 100%;
+	background:#57606F;
+	padding: 0px 0px 20px 0 !important;
+	margin-top:0px;
+}
+
+/* Categories */
+.widget_categories {
+	margin:0;
+	padding:0;
+}
+.widget_categories ul {
+	padding:0 !important;
+	line-height: normal !important;
+}
+.widget_categories ul li {
+	float: left;
+	width: 100%;
+	list-style: none;
+	padding: 0 0 0 0px;
+	line-height:34px;
+
+}
+.widget_categories ul li a {
+	float: left;
+	color:#edecec !important;
+	font-size:13px;
+	font-family: 'open_sansregular', sans-serif;
+	line-height:26px !important;
+}
+.widget_categories ul li a i {
+	float: left;
+	color:#fff !important;
+	font-size:20px;
+	margin-right:10px;
+	line-height:32px;
+}
+.widget_categories ul li a:hover {
+	float: left;
+	color:#edecec !important;
+	font-size:13px;
+	font-family: 'open_sansregular', sans-serif;
+	line-height:20px !important;
+}
+
+
+/* Footer Widget */
+#ec-footer {
+	float: left;
+	width: 100%;
+}
+#ec-footer .btn {
+	background:#f1dd03;
+	border:none;
+	color:#000;
+	padding:7px 10px;
+	border-radius:0 !important;
+}
+.newsletter {
+	font-size:16px;
+	color:#eaebec;
+}
+.ec-footer-widget {
+	float: left;
+	width: 100%;
+	padding:5px 0px 0px 0px !important;
+}
+
+.for-spacing {
+	padding:5px 0px 5px 0px !important;
+}
+.ec-footer-widget .ec-main-title h2 {
+	text-transform:none !important;
+	position: relative;
+	margin:0;
+	color:#FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px !important;
+	text-transform:uppercase !important;
+	font-weight:none !important;
+}
+.ec-footer-widget p {
+	color: #edecec;
+	font-size:13px;
+	font-family: 'open_sansregular', sans-serif;
+	padding:10px 0 0 0;
+	line-height:20px !important;
+}
+
+
+.footer-links {
+	margin-left:-6px;
+	position:relative;
+	padding:20px 0 0 0;
+	
+}
+.footer-links ul {
+	margin:0;
+	padding:0;
+	list-style:none !important;
+}
+.footer-links ul li {
+	list-style:none;
+	float:left;
+	margin:10px 0 10px 0;
+	padding:0 12px 0 12px;
+	line-height:13px !important;
+	border-right:1px solid #d3d3d4 !important;
+	font-family: 'Open Sans', sans-serif !important;
+	text-transform:uppercase;
+	font-weight:300;
+	
+}
+
+.footer-links li:last-child{
+   border:none !important;
+}
+
+
+.footer-links ul li a {
+	list-style:none;
+	margin:0;
+	color:#edecec !important;
+	font-size:13px !important;
+	font-family: 'Open Sans', sans-serif !important;
+	text-transform:none;
+	font-weight:300;
+	
+	
+}
+.footer-links ul li a:hover {
+	margin:0;
+
+}
+
+.ec-copyright p {
+	float: left;
+	padding:5px 0px 0px 0px !important;
+	font-size:13px;
+	color:#edecec;
+	font-family: 'Open Sans', sans-serif !important;
+	font-weight:300;
+	line-height:26px !important;
+}
+
+
+/* Social Network */
+.ec-social-network {
+	top:0px;
+	padding:35px 0 30px 0 !important;
+	float:none !important;
+}
+.ec-social-network ul li {
+	list-style: none;
+	float: left;
+	overflow: hidden;
+	margin-right: 4px;
+	line-height: 1;
+	color: #edecec;
+	font-size:13px;
+}
+.ec-social-network ul li a {
+	float: left;
+	padding:0px 12px;
+	color: #dfdfdf;
+	font-size:22px;
+	
+}
+.ec-social-network ul li:hover span {
+	text-indent: 7px;
+	opacity: 0.8;
+	margin-left: 0px;
+}
+.ec-social-network ul li a i {
+	float: left;
+	font-size:22px;
+}
+
+
+
+}
+
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+
+.navigation {
+    margin: 0;
+    padding: 12px 0 0 0;
+    float: left !important;
+}
+	
+	
+	.ec-team, .ec-team-grid figure, .ec-team figure a, .ec-team figure a img {
+	float: none !important;
+	width: 100%;
+}
+
+.ec-main-title {
+    float: none;
+    width: 100%;
+    margin: 15px 0px 8px 0px !important;
+}
+
+
+.our_services {
+    margin: 0;
+    padding: 30px 0 10px 0 !important;
+}
+.our_services h1{
+	font-size:18px !important; 
+	margin-bottom:0 !important; 
+	padding-bottom:0 !important;
+	padding-top:20px !important;
+	}
+	
+	/*************************************************************
+.............. 3.6. FEATURED JOBSEEKER EMPLOYERS ...............
+*************************************************************/
+
+
+.featured_section {
+	margin:0;
+	width: 100%;
+	background: none !important;
+	
+
+}
+
+.featured_section .left {
+	display:block !important;
+	float: left;
+	width: 50%;
+	margin-left:0;
+ padding-right:0 !important;
+ background:#74A741;
+ padding-top:20px !important;
+  padding-bottom:20px !important;
+  min-height:50px !important;
+  text-align:center !important;
+  clear:fix !important;
+}
+
+.featured_section .left h1 {
+	float: none !important;
+	padding-right:0px !important;
+	font-size:22px !important;
+	text-transform:uppercase;
+	color:#FFF;
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:center !important
+	
+	
+}
+
+.featured_section .left .text {
+	float: none !important;
+	color:#FFF;
+	font-size:14px;
+	clear:both;
+	text-align: center !important;
+	line-height:16px !important;
+	
+}
+
+.featured_section .left .create_account {
+	float:none !important;
+	color:#FFF;
+	font-size:15px;
+	clear:both;
+	margin-right:0px !important;
+	margin-top:15px !important;
+
+	
+}
+
+.featured_section .left .create_account a{
+	background:#00ADEF;
+	color:#FFF;
+	min-width:100% !important;
+	text-align:center;
+	line-height:45px;
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	border-radius:30px;
+	padding:10px 30px
+	
+	
+}
+
+.featured_section .left .create_account:hover {
+	float: none !important;
+	color:#FFF;
+	font-size:15px;
+	clear:both;
+
+	
+}
+
+
+.featured_section .right {
+	float: left !important;
+	margin-left:0;
+	width: 50%;
+	background:#00ADEF;
+	padding-top:20px !important;
+  padding-bottom:20px !important;
+    min-height:50px !important;
+	text-align:center !important;
+}
+
+.featured_section .right h1 {
+	float:none !important;
+	padding-left:0 !important;
+	font-size:22px !important;
+	text-transform:uppercase;
+	color:#FFF;
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.featured_section .right .text {
+	float: none !important;
+	color:#FFF;
+	clear:both;
+	padding:0 5px 0 5px !important;
+	font-size:14px !important;
+	padding-left:0px !important;
+	line-height:16px !important;
+	
+	
+}
+
+.featured_section .right .start_hiring {
+	float: none !important;
+	color:#FFF;
+	font-size:16px;
+	clear:both;
+	margin-left:0 !important;
+	margin-top:15px !important;
+	text-align:center !important
+	
+
+	
+}
+
+.featured_section .right .start_hiring a{
+	background:#74a741;
+	min-width:100% !important;
+	text-align:center;
+	line-height:45px;
+	font-size:14px !important;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	border-radius:30px;
+	padding:10px 30px;
+	color:#FFF;
+	
+}
+
+.featured_section .right .start_hiring:hover {
+	float: left;
+	color:#FFF;
+	font-size:16px;
+	clear:both;
+
+	
+}
+	
+}
+
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+	
+
+	/*************************************************************
+.............. 3.6. FEATURED JOBSEEKER EMPLOYERS ...............
+*************************************************************/
+
+.navigation {
+    margin: 0;
+    padding: 32px 0 0 10px !important;
+    float: left !important;
+}
+
+
+.featured_section {
+	margin:0;
+	width: 100%;
+	background: none !important;
+	
+
+}
+
+.featured_section .left {
+	display:block !important;
+	float: left;
+	width: 50%;
+	margin-left:0;
+ padding-right:0 !important;
+ background:#74A741;
+ padding-top:20px !important;
+  padding-bottom:20px !important;
+  min-height:50px !important;
+  text-align:center !important;
+  clear:fix !important;
+  padding-left:10px !important;
+  padding-right:10px !important;
+}
+
+.featured_section .left h1 {
+	float: none !important;
+	padding-right:0px !important;
+	font-size:22px !important;
+	text-transform:uppercase;
+	color:#FFF;
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:center !important
+	
+	
+}
+
+.featured_section .left .text {
+	float: none !important;
+	color:#FFF;
+	font-size:14px;
+	clear:both;
+	text-align: center !important;
+	line-height:16px !important;
+	
+}
+
+.featured_section .left .create_account {
+	float:none !important;
+	color:#FFF;
+	font-size:15px;
+	clear:both;
+	margin-right:0px !important;
+	margin-top:15px !important;
+
+	
+}
+
+.featured_section .left .create_account a{
+	background:#00ADEF;
+	color:#FFF;
+	min-width:100% !important;
+	text-align:center;
+	line-height:45px;
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	border-radius:30px;
+	padding:10px 30px
+	
+	
+}
+
+.featured_section .left .create_account:hover {
+	float: none !important;
+	color:#FFF;
+	font-size:15px;
+	clear:both;
+
+	
+}
+
+
+.featured_section .right {
+	float: left !important;
+	margin-left:0;
+	width: 50%;
+	background:#00ADEF;
+	padding-top:20px !important;
+  padding-bottom:20px !important;
+    min-height:50px !important;
+	text-align:center !important;
+	 padding-left:10px !important;
+  padding-right:10px !important;
+}
+
+.featured_section .right h1 {
+	float:none !important;
+	padding-left:0 !important;
+	font-size:22px !important;
+	text-transform:uppercase;
+	color:#FFF;
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.featured_section .right .text {
+	float: none !important;
+	color:#FFF;
+	clear:both;
+	padding:0 5px 0 5px !important;
+	font-size:14px !important;
+	padding-left:0px !important;
+	line-height:16px !important;
+	
+	
+}
+
+.featured_section .right .start_hiring {
+	float: none !important;
+	color:#FFF;
+	font-size:16px;
+	clear:both;
+	margin-left:0 !important;
+	margin-top:15px !important;
+	text-align:center !important
+	
+
+	
+}
+
+.featured_section .right .start_hiring a{
+	background:#74a741;
+	min-width:100% !important;
+	text-align:center;
+	line-height:45px;
+	font-size:14px !important;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	border-radius:30px;
+	padding:10px 30px;
+	color:#FFF;
+	
+}
+
+.featured_section .right .start_hiring:hover {
+	float: left;
+	color:#FFF;
+	font-size:16px;
+	clear:both;
+
+	
+}	
+	
+}
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+.career-management .title {
+    margin: 0;
+    padding: 25px 0 0 0 !important;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+}	
+	
+}
+
+
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
+header .bottom-header .navbar-default .navbar-nav>li>a {
+    font-size: 12px !important;
+    color: #666764;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    padding: 0px 0x 15px 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar .navbar-nav li .dropdown-menu>li>a {
+    font-size: 11px !important;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid #385b8e;
+    transition-duration: .15s;
+    font-family: 'montserratregular', sans-serif;
+}
+
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 3px !important;
+}
+
+.signin {
+    margin-top: -3px;
+    margin-right: -2px !important;
+    padding: 2px 8px !important;
+    background: #74A741;
+    color: #FFF;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px !important;
+    font-weight: 300;
+}
+.signup {
+    margin-top: -3px;
+    padding: 2px 8px !important;
+    background: #00ADEF;
+    color: #FFF;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px !important;
+}
+
+.ec-footer-widget p {
+    color: #edecec;
+    font-size: 11px !important;
+    font-family: 'open_sansregular', sans-serif;
+    padding: 10px 0 0 0;
+    line-height: 26px !important;
+}
+
+
+.widget_categories ul li a {
+    float: left;
+    color: #edecec !important;
+    font-size: 11px !important;
+    font-family: 'open_sansregular', sans-serif;
+    line-height: 26px !important;
+}
+
+
+.career-management .title {
+    margin: 0;
+    padding: 55px 0 0 0 !important;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+	/*************************************************************
+.............. RIGHT SIDE BAR MENU...............
+*************************************************************/
+
+
+.right-sidebar {
+    padding: 20px 10px 10px 10px !important;
+    border: 1px solid #e8e6e6;
+    background: #FFFFFF;
+}
+
+.right-links {
+	margin:0;
+	padding:10px 0 10px 0;
+}
+.right-links ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.right-links li {
+	margin:0;
+	padding:0;
+	margin:0;
+	padding:0px 0;
+	font-size:15px !important;
+	color:#376bb2;
+	line-height:45px;
+	border-bottom:1px solid #F0F1F0;
+}
+.right-links li a {
+	margin:0;
+	padding:0;
+	margin:0;
+	padding:0;
+	font-size:15px !important;
+	color:#56606E;
+}
+.right-links li a:hover {
+	display:inline-block;
+	width:100%;
+	margin:0;
+	padding:0px;
+	font-size:15px !important;
+	color:#fff;
+	background:#74A741;
+}
+
+.content-right p {
+	margin:0;
+	padding:3px 0 0 0;
+	font-size:12px !important;
+	line-height:22px;
+}
+
+
+
+}
+ /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+	
+	
+/*************************************************************
+.............. 3.6. FEATURED JOBSEEKER EMPLOYERS ...............
+*************************************************************/
+
+
+.featured_section {
+	margin:0;
+	width: 100%;
+	background: #fff; 
+
+}
+
+.featured_section .left {
+	float: left !important;
+	width: 50% !important;
+	margin-left:0;
+ padding-right:115px !important;
+ background:#74A741;
+ padding-top:30px !important;
+  padding-bottom:30px !important;
+  min-height:207px !important;
+}
+
+.featured_section .left h1 {
+	float: right !important;
+	padding-right:60px !important;
+	font-size:36px !important;
+	text-transform:uppercase !important;
+	color:#FFF;
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+	
+	
+}
+
+.featured_section .left .text {
+	float: right !important;
+	color:#FFF;
+	font-size:16px !important;
+	clear:both;
+	text-align:right !important;
+	line-height:10px !important;
+	padding-right: 5rem !important;
+	
+}
+
+.featured_section .left .create_account {
+	float: right !important;
+	color:#FFF;
+	font-size:16px !important;
+	clear:both;
+	margin-right:40px !important;
+	margin-top:25px !important;
+
+	
+}
+
+.featured_section .left .create_account a{
+	background:#00ADEF;
+	color:#FFF;
+	min-width:282px !important;
+	text-align:center !important;
+	line-height:45px !important;
+	font-size:16px !important;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	border-radius:30px;
+	padding:15px 50px
+	
+	
+}
+
+.featured_section .left .create_account:hover {
+	float: right !important;
+	color:#FFF;
+	font-size:16px !important;
+	clear:both;
+
+	
+}
+
+
+.featured_section .right {
+	float: left !important;
+	margin-left:0;
+	width: 50% !important;
+	background:#00ADEF;
+	padding-top:30px !important;
+  padding-bottom:30px !important;
+    min-height:207px !important;
+}
+
+.featured_section .right h1 {
+	float: left !important;
+	padding-left:190px !important;
+	font-size:36px !important;
+	text-transform:uppercase;
+	color:#FFF;
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.featured_section .right .text {
+	float: left !important;
+	color:#FFF;
+	clear:both;
+	padding-left:195px !important;
+	line-height:10px !important;
+	
+	
+}
+
+.featured_section .right .start_hiring {
+	float: left !important;
+	color:#FFF;
+	font-size:16px !important;
+	clear:both;
+	margin-left:168px !important;
+	margin-top:25px !important;
+	
+
+	
+}
+
+.featured_section .right .start_hiring a{
+	background:#74a741;
+	min-width:282px !important;
+	text-align:center !important;
+	line-height:45px !important;
+	font-size:16px !important;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	border-radius:30px !important;
+	padding:15px 50px !important;
+	color:#FFF;
+	
+}
+
+.featured_section .right .start_hiring:hover {
+	float: left !important;
+	color:#FFF;
+	font-size:16px !important;
+	clear:both;
+
+	
+}
+}
+
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+
+ /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) {
+}
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+}
+
+ /* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {
+}
+

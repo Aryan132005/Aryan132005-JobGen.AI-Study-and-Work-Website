@@ -1,0 +1,10 @@
+# Ignore files exceeding GitHub 100MB limit
+pj.mp4
+**/pj.mp4
+
+# Cache and Temp Files
+hts-cache/
+hts-log.txt
+cookies.txt
+.DS_Store
+Thumbs.db

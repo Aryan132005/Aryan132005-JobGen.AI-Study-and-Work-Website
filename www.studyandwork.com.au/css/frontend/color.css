@@ -1,0 +1,32 @@
+/* ThemeColor */
+.ec-color,.ec-colorhover:hover,.flex-direction-nav a:hover,
+.ec-blog ul li:hover h5 a,.ec-services ul li:hover .ec-service-wrap h4,.widget_categories ul li:hover a,.widget_categories ul li:hover,
+.ec-breadcrumb li.active a,.ec-simple ul li:hover h4 a,.ec-team ul li:hover h6 a,.ec-short-section ul li a:hover,#eccomments ul li .text a.replay-btn,
+.panel-title a:before,.ec-testimonial-wrap i:before {
+	
+}
+
+.ec-bgcolor,.ec-bgcolorhover:hover,.main-navigation > ul > li.active > a,.main-navigation > ul > li:hover > a,.main-navigation .as-dropdown > li:hover > a,
+.ec-main-title h2:before,.ec-liststyle ul li:before,.ec-fancy-title h2:before,.portfolio-filter li a.active,.ec-services ul li:hover .ec-icon,
+.owl-nav div:hover,.ec-testimonial-wrap span:before,.ec-testimonial .flex-control-paging li a,.widget_categories ul li:hover a:before,
+.ec-pagination li:hover a,.ec-pagination li.active a,blockquote:hover:before,.quote-btn:hover,.ec-postsection ul li:hover .ec-arrow-left,
+.ec-simplehover:before,.ec-simple ul li:hover .ec-godetail,.ec-team ul li:hover .ec-detail-link,
+.nav-tabs > li.active > a,.ec-service-wrap h6:before,.ec-service-wrap:before,.lSAction > a:hover,.ec-isthumb ul li.active a:before,
+.ec-price-table > ul > li:hover .ec-pricebtn,.ec-price-table > ul > li:hover .price-title,
+.ec-price-table > ul > li.ec-featured-price .ec-pricebtn,.ec-price-table > ul > li.ec-featured-price .price-title,.panel-title a.collapsed:before,
+.panel-title a,.countdown-amount,.ec-largehover span:before,.table-condensed thead,.layout-btn a span {
+	background-color:;
+}
+
+.ec-bordercolor,.ec-bordercolorhover:hover,.ec-mainheader,.flex-direction-nav a:hover,.port-icon span,.ec-icon,.ec-page-title h1,.ec-wellcome-text a {
+	border-color: #035eb0;
+}
+
+.nav-tabs > li.active > a:before {
+	border-top: 8px solid #035eb0;
+}
+
+.ec-date:before {
+	border-top: 10px solid #035eb0;
+	border-left: 10px solid transparent;
+}
