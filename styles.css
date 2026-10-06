@@ -426,6 +426,60 @@ video {
   color: var(--color-slate-600) !important;
 }
 
+/* LIGHT SPIDER SECTION CARDS, BOXES, AND TILES - ELEGANT SOFT TINT */
+.section-spider-light .path-card-candidate,
+.section-spider-light .path-card-employer,
+.section-spider-light .alumni-card-editorial,
+.section-spider-light .candidate-grid-3 > div,
+.section-spider-light .employer-grid-2 > div,
+.section-spider-light .journey-node-card,
+.section-spider-light [style*="background: var(--color-surface)"],
+.section-spider-light [style*="background:var(--color-surface)"],
+.section-spider-light [style*="background: var(--color-paper)"],
+.section-spider-light [style*="background:var(--color-paper)"] {
+  background: linear-gradient(165deg, #F8FAFD 0%, #EEF4F9 100%) !important;
+  border: 1px solid #D5E2EE !important;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+  transition: all var(--transition-normal);
+}
+
+.section-spider-light .video-player-box {
+  background: #000 !important;
+}
+
+.section-spider-light .path-card-candidate:hover,
+.section-spider-light .path-card-employer:hover,
+.section-spider-light .alumni-card-editorial:hover,
+.section-spider-light .candidate-grid-3 > div:hover,
+.section-spider-light .employer-grid-2 > div:hover,
+.section-spider-light [style*="background: var(--color-surface)"]:hover,
+.section-spider-light [style*="background:var(--color-surface)"]:hover,
+.section-spider-light [style*="background: var(--color-paper)"]:hover,
+.section-spider-light [style*="background:var(--color-paper)"]:hover {
+  transform: translateY(-5px);
+  background: #FFFFFF !important;
+  border-color: #0284C7 !important;
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.16), 0 6px 14px -2px rgba(15, 23, 42, 0.06) !important;
+}
+
+.section-spider-light .path-card-candidate h3,
+.section-spider-light .path-card-employer h3,
+.section-spider-light .candidate-grid-3 h3,
+.section-spider-light .employer-grid-2 h3,
+.section-spider-light [style*="background: var(--color-surface)"] h3,
+.section-spider-light [style*="background: var(--color-surface)"] h4 {
+  color: var(--color-ink) !important;
+}
+
+.section-spider-light .path-card-candidate p,
+.section-spider-light .path-card-employer p,
+.section-spider-light .candidate-grid-3 p,
+.section-spider-light .employer-grid-2 p,
+.section-spider-light [style*="background: var(--color-surface)"] p {
+  color: #475569 !important;
+}
+
 /* 2. BLACK / DARK SPIDER SECTION */
 .section-spider-dark,
 .section-dark {
@@ -909,9 +963,16 @@ video {
   gap: 1.5rem;
 }
 
-.path-card-candidate {
-  background: var(--color-surface);
-  border: 1px solid var(--color-slate-200);
+.employer-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.path-card-candidate,
+.path-card-employer {
+  background: linear-gradient(165deg, #F8FAFD 0%, #EEF4F9 100%);
+  border: 1px solid #D5E2EE;
   border-radius: var(--radius-lg);
   padding: 2.25rem 1.75rem;
   display: flex;
@@ -920,18 +981,31 @@ video {
   gap: 1.5rem;
   transition: all var(--transition-slow);
   position: relative;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
 }
 
-.path-card-candidate:hover {
+.path-card-candidate:hover,
+.path-card-employer:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  background: #FFFFFF;
   border-color: var(--color-accent-blue);
+  box-shadow: 0 20px 40px -8px rgba(2, 132, 199, 0.16), 0 8px 16px -4px rgba(15, 23, 42, 0.06);
 }
 
-.path-card-candidate .path-link {
+.path-card-candidate .path-link,
+.path-card-employer .path-link {
   color: var(--color-accent-blue);
   font-size: 0.9375rem;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap 0.2s ease;
+}
+
+.path-card-candidate:hover .path-link,
+.path-card-employer:hover .path-link {
+  gap: 0.6rem;
 }
 
 /* Distinct Business Journey Card */
@@ -1540,7 +1614,8 @@ video {
     gap: 3.5rem;
   }
 
-  .candidate-grid-3 {
+  .candidate-grid-3,
+  .employer-grid-2 {
     grid-template-columns: 1fr;
   }
 

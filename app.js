@@ -45,13 +45,25 @@ function initHeaderScroll() {
    2. VIDEO PLAYER BUILDER (HTML5 CONTROLS, UNRESTRICTED SEEKING)
    -------------------------------------------------------------------------- */
 function renderVideoPlayer(src, title, duration) {
+  const cleanSrc = src.startsWith('/') ? src : '/' + src;
+  const vidId = 'vid_' + Math.random().toString(36).substring(2, 9);
   return `
     <div class="video-player-box" style="position: relative; border-radius: 1.25rem; overflow: hidden; background: #000; box-shadow: var(--shadow-card); margin: 1.75rem 0;">
       ${duration ? `<div class="video-meta-badge" style="position: absolute; top: 1rem; right: 1rem; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(8px); color: #fff; padding: 0.35rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; z-index: 5; pointer-events: none;">Duration: ${duration}</div>` : ''}
-      <video controls preload="metadata" playsinline class="custom-html5-player" style="width: 100%; border-radius: 1.25rem; background: #000;">
-        <source src="${src}" type="video/mp4">
-        Your browser does not support HTML5 video playback. <a href="${src}" target="_blank" style="color: var(--color-accent-blue); text-decoration: underline;">Download video file (${title})</a>
+      <video id="${vidId}" controls preload="auto" playsinline class="custom-html5-player" style="width: 100%; border-radius: 1.25rem 1.25rem 0 0; background: #000; display: block;">
+        <source src="${cleanSrc}" type="video/mp4">
+        Your browser does not support HTML5 video playback. <a href="${cleanSrc}" target="_blank" style="color: var(--color-accent-blue); text-decoration: underline;">Download video file (${title})</a>
       </video>
+      <div class="video-playback-toolbar" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1rem; background: rgba(15, 23, 42, 0.96); border-top: 1px solid rgba(255, 255, 255, 0.12); gap: 0.75rem;">
+        <div style="font-size: 0.75rem; color: #94A3B8; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+          ${title || 'Australian Career Video'}
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0;">
+          <button type="button" onclick="(function(){ const v = document.getElementById('${vidId}'); if(v) { v.currentTime = Math.max(0, v.currentTime - 10); } })()" style="background: rgba(255, 255, 255, 0.12); color: #F8FAFC; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.3rem 0.65rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.2s;" title="Rewind 10 seconds">&#9194; -10s</button>
+          <button type="button" onclick="(function(){ const v = document.getElementById('${vidId}'); if(v) { v.currentTime = Math.min(v.duration || 99999, v.currentTime + 10); } })()" style="background: rgba(255, 255, 255, 0.12); color: #F8FAFC; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.3rem 0.65rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.2s;" title="Forward 10 seconds">+10s &#9193;</button>
+          <button type="button" onclick="(function(){ const v = document.getElementById('${vidId}'); if(v) { v.currentTime = Math.min(v.duration || 99999, v.currentTime + 30); } })()" style="background: rgba(255, 255, 255, 0.12); color: #F8FAFC; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.3rem 0.65rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.2s;" title="Forward 30 seconds">+30s &#9193;</button>
+        </div>
+      </div>
     </div>
   `;
 }
