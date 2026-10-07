@@ -4,7 +4,7 @@ import sys
 from http import HTTPStatus
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-PORT = 8085
+PORT = int(os.environ.get('PORT', 8085))
 
 class RangeFile:
     def __init__(self, f, length):

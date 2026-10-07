@@ -1,0 +1,3 @@
+# JobGen.AI - Study & Work Australia
+# All dependencies use Python Standard Library (http.server, os, re, sys).
+# No external pip packages required.
